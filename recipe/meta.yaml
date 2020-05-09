@@ -1,5 +1,5 @@
 {% set name = "graphene-django" %}
-{% set version = "2.9.1" %}
+{% set version = "2.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9a95913e3c70e8013c4908b916c68ab1497e1a6cd1cdd1793010f79777978596
+  sha256: ffb9a52470d17e22c7330f29d23f35c581d4c1f3929f16411c23f0ed9d0b8a65
 
 build:
   noarch: python
@@ -34,8 +34,7 @@ about:
   license_family: MIT
   license_file: LICENSE
   summary: Graphene Django integration
-  description: Graphene-Django is built on top of Graphene. Graphene-Django provides some additional abstractions that make it easy to add GraphQL functionality to
-    your Django project.
+  description: Graphene-Django is built on top of Graphene. Graphene-Django provides some additional abstractions that make it easy to add GraphQL functionality to your Django project.
   doc_url: https://docs.graphene-python.org/projects/django/en/latest/
   dev_url: https://github.com/graphql-python/graphene-django
 
