@@ -27,6 +27,7 @@ requirements:
     - python
     - singledispatch >=3.4.0.3
     - six >=1.10.0
+    - unidecode >=1.1.1,<2
 
 about:
   home: https://github.com/graphql-python/graphene-django
