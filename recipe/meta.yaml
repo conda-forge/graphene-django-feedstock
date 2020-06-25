@@ -1,5 +1,5 @@
 {% set name = "graphene-django" %}
-{% set version = "2.10.1" %}
+{% set version = "2.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4b38812983d360560ce7e783756937b3793c9d1545e8b3881fd1af21c091a726
+  sha256: 6354016ceab1ca25b45bb3689ca8d53c8b004904e10aed0a5cc4db29c92cb690
 
 build:
   noarch: python
@@ -27,6 +27,7 @@ requirements:
     - python
     - singledispatch >=3.4.0.3
     - six >=1.10.0
+    - unidecode >=1.1.1,<2
 
 about:
   home: https://github.com/graphql-python/graphene-django
