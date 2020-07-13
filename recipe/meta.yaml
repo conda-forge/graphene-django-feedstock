@@ -1,5 +1,5 @@
 {% set name = "graphene-django" %}
-{% set version = "2.12.0" %}
+{% set version = "2.12.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 93da3d127fadbd45b0531ade6d916877dba1e8c7767ed957ab5ed10b61ee2a32
+  sha256: 3d92bf2c43834f3e1caa1c24b79cc5f7c5974670d7d92fd3a4f28c2fd7680c5b
 
 build:
   noarch: python
