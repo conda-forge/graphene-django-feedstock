@@ -5,9 +5,13 @@ Home: https://github.com/graphql-python/graphene-django
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/graphene-django-feedstock/blob/master/LICENSE.txt)
 
 Summary: Graphene Django integration
+
+Development: https://github.com/graphql-python/graphene-django
+
+Documentation: https://docs.graphene-python.org/projects/django/en/latest/
 
 Graphene-Django is built on top of Graphene. Graphene-Django provides some additional abstractions that make it easy to add GraphQL functionality to your Django project.
 
