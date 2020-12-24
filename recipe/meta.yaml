@@ -17,17 +17,17 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >= 2.7
     - pytest-runner
   run:
     - django >=1.11
     - graphene >=2.1.7,<3
     - graphql-core >=2.1.0,<3
     - promise >=2.1
-    - python
+    - python >= 2.7
     - singledispatch >=3.4.0.3
     - six >=1.10.0
-    - unidecode >=1.1.1,<2
+    - text-unidecode
 
 about:
   home: https://github.com/graphql-python/graphene-django
