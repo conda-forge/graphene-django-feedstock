@@ -1,33 +1,40 @@
 {% set name = "graphene-django" %}
-{% set version = "2.15.0" %}
+{% set version = "3.1.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b78c9b05bc899016b9cc5bf13faa1f37fe1faa8c5407552c6ddd1a28f46fc31a
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/graphene-django-{{ version }}.tar.gz
+  sha256: f12cce91d516d4e23aa0cf46c1faed031adea09254534a6a5afbd29f3268e68a
 
 build:
   noarch: python
-  number: 0
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
-    - pip
-    - python >=2.7
+    - python >=3.7
     - pytest-runner
+    - pip
   run:
-    - django >=1.11
-    - graphene >=2.1.7,<3
-    - graphql-core >=2.1.0,<3
+    - python >=3.7
+    - graphene >=3.0,<4
+    - graphql-core >=3.1.0,<4
+    - graphql-relay >=3.1.1,<4
+    - django >=3.2
     - promise >=2.1
-    - python >=2.7
-    - singledispatch >=3.4.0.3
-    - six >=1.10.0
     - text-unidecode
+
+test:
+  imports:
+    - graphene_django
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/graphql-python/graphene-django
