@@ -150,4 +150,5 @@ Feedstock Maintainers
 =====================
 
 * [@KingDarBoja](https://github.com/KingDarBoja/)
+* [@rxm7706](https://github.com/rxm7706/)
 
