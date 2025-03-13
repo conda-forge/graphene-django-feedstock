@@ -1,5 +1,5 @@
 {% set name = "graphene-django" %}
-{% set version = "3.2.2" %}
+{% set version = "3.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/graphene-django-{{ version }}.tar.gz
-  sha256: 059ccf25d9a5159f28d7ebf1a648c993ab34deb064e80b70ca096aa22a609556
+  sha256: d831bfe8e9a6e77e477b7854faef4addb318f386119a69ee4c57b74560f3e07d
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -21,6 +21,8 @@ requirements:
     - pip
     - setuptools
   run:
+    - django-filter
+    - djangorestframework
     - python >={{ python_min }}
     - graphene >=3.0,<4
     - graphql-core >=3.1.0,<4
